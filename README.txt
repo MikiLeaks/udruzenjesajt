@@ -4,8 +4,13 @@ Ovo je dorada prototipa koji je pripremljen u prethodnom krugu (ChatGPT + Claude
 Struktura, dizajn i skoro sav sadržaj su zadržani - Claude je proverio ceo sajt
 naspram teksta Statuta i ispravio mesta gde su postojali izmišljeni podaci.
 
+NAPOMENA O VERZIJI: sajt je prebačen sa statičkog HTML-a na PHP - zaglavlje i futer
+se sada nalaze na jednom mestu (includes/header.php i includes/footer.php), a svi
+podaci i meniji u includes/config.php. Stranice imaju nastavak .php umesto .html.
+Detaljno uputstvo je u README.md.
+
 SADRŽAJ PAKETA:
-- Višestranični responsivni HTML/CSS/JS sajt (15 stranica + 404)
+- Višestranični responsivni HTML5/CSS3/JS/PHP sajt (15 stranica + 404)
 - Početna, O nama, Dokumenta, Projekti, Edukacije, Vesti, Članstvo, Donacije, Kontakt
 - Dodatne stranice: besplatni materijali, portfolio, blog, privatnost, kolačići,
   uslovi korišćenja, 404
@@ -32,15 +37,15 @@ SADRŽAJ PAKETA:
    koji je potpisao dokument. Tekst je ublažen da odražava samo ono što je
    potvrđeno, uz napomenu da proverite da li je on i zvanično izabrani Zastupnik.
 5. Dodata jedinstvena meta description po stranici (bilo je identično na svih 15).
-6. Dodati robots.txt i 404.html.
+6. Dodati robots.txt i 404.php.
 
 VAŽNO PRE OBJAVLJIVANJA (i dalje):
 1. Popuniti sve placeholdere obeležene sa [unesite ...] - PIB, matični broj,
    tačan datum osnivanja, i dodati broj telefona ako želite da bude javan.
 2. Registrovati pravi domen i zameniti "vas-domen.rs" svuda (samo par mesta:
-   email adresa u topbar-u/footeru/kontakt.html i robots.txt).
+   email adresa u topbar-u/footeru/kontakt.php i robots.txt).
 3. Uneti broj računa na stranici Donacije.
-4. Dodati APR rešenje, godišnja i finansijska izveštaje (dokumenta.html).
+4. Dodati APR rešenje, godišnja i finansijska izveštaje (dokumenta.php).
 5. Zameniti primere projekata, vesti, partnera i galerije stvarnim sadržajem.
 6. Povezati forme sa pravim servisom za slanje e-pošte (npr. Formspree, Contact
    Form 7/Fluent Forms ako se prebaci na WordPress, ili sopstveni SMTP/backend) -
@@ -58,5 +63,5 @@ FAQ i tamni footer. Nisu kopirani originalni tekstovi ni grafički materijali
 teme.
 
 WORDPRESS / ELEMENTOR:
-Svaka HTML sekcija može se preneti u Elementor kao Container/Flexbox sekcija.
+Svaka HTML sekcija (u .php fajlovima) može se preneti u Elementor kao Container/Flexbox sekcija.
 Globalne boje su definisane na početku assets/css/style.css.
