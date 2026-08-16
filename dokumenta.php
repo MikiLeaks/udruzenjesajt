@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Statut i dokumenta';
-$page_description = 'Statut i javna dokumenta Udruženja „Микиликс веб развој" — preuzmite u PDF ili Word formatu.';
+$page_description = 'Statut i javna dokumenta Udruženja „Mikiliks veb razvoja" — preuzmite u PDF ili Word formatu.';
 require __DIR__ . '/includes/header.php';
 ?>
 

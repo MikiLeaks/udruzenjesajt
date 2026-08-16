@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Uslovi korišćenja';
-$page_description = 'Uslovi korišćenja sajta Udruženja „Микиликс веб развој".';
+$page_description = 'Uslovi korišćenja sajta Udruženja „Mikiliks veb razvoja".';
 require __DIR__ . '/includes/header.php';
 ?>
 

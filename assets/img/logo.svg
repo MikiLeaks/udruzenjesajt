@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" role="img" aria-labelledby="title desc">
-<title id="title">Микиликс веб развој</title><desc id="desc">Plavi znak sa povezanim digitalnim čvorovima i nazivom udruženja.</desc>
+<title id="title">Mikiliks veb razvoja</title><desc id="desc">Plavi znak sa povezanim digitalnim čvorovima i nazivom udruženja.</desc>
 <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b63ce"/><stop offset="1" stop-color="#19a8ff"/></linearGradient></defs>
 <g transform="translate(2 4)">
 <path d="M28 1 52 15v28L28 57 4 43V15z" fill="none" stroke="url(#g)" stroke-width="4"/>

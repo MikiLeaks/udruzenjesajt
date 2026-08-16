@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Projekti i aktivnosti';
-$page_description = 'Programske celine, projekti i aktivnosti Udruženja „Микиликс веб развој" u oblasti obrazovanja, nauke i digitalnog razvoja.';
+$page_description = 'Programske celine, projekti i aktivnosti Udruženja „Mikiliks veb razvoja" u oblasti obrazovanja, nauke i digitalnog razvoja.';
 require __DIR__ . '/includes/header.php';
 ?>
 

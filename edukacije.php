@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Kursevi i edukacije';
-$page_description = 'Kursevi, radionice, seminari i stručno usavršavanje koje organizuje Udruženje „Микиликс веб развој".';
+$page_description = 'Kursevi, radionice, seminari i stručno usavršavanje koje organizuje Udruženje „Mikiliks veb razvoja".';
 require __DIR__ . '/includes/header.php';
 ?>
 

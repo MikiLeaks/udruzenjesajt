@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Stranica nije pronađena (404)';
-$page_description = 'Tražena stranica ne postoji ili je premeštena. Vratite se na početnu stranu Udruženja „Микиликс веб развој".';
+$page_description = 'Tražena stranica ne postoji ili je premeštena. Vratite se na početnu stranu Udruženja „Mikiliks veb razvoja".';
 require __DIR__ . '/includes/header.php';
 ?>
 

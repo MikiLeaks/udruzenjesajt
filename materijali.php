@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Besplatni materijali';
-$page_description = 'Besplatni edukativni materijali, priručnici i vodiči Udruženja „Микиликс веб развој".';
+$page_description = 'Besplatni edukativni materijali, priručnici i vodiči Udruženja „Mikiliks veb razvoja".';
 require __DIR__ . '/includes/header.php';
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Članstvo';
-$page_description = 'Uslovi učlanjenja, prava i obaveze članova Udruženja „Микиликс веб развој", uz online pristupnicu.';
+$page_description = 'Uslovi učlanjenja, prava i obaveze članova Udruženja „Mikiliks veb razvoja", uz online pristupnicu.';
 require __DIR__ . '/includes/header.php';
 ?>
 

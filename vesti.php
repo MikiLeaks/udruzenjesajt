@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Vesti';
-$page_description = 'Obaveštenja, najave i novosti iz rada Udruženja „Микиликс веб развој".';
+$page_description = 'Obaveštenja, najave i novosti iz rada Udruženja „Mikiliks veb razvoja".';
 require __DIR__ . '/includes/header.php';
 ?>
 

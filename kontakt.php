@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Kontakt';
-$page_description = 'Kontakt podaci i forma za pitanja, saradnju i prijave upućene Udruženju „Микиликс веб развој" iz Kragujevca.';
+$page_description = 'Kontakt podaci i forma za pitanja, saradnju i prijave upućene Udruženju „Mikiliks veb razvoja" iz Kragujevca.';
 require __DIR__ . '/includes/header.php';
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Politika kolačića';
-$page_description = 'Politika kolačića na sajtu Udruženja „Микиликс веб развој".';
+$page_description = 'Politika kolačića na sajtu Udruženja „Mikiliks veb razvoja".';
 require __DIR__ . '/includes/header.php';
 ?>
 

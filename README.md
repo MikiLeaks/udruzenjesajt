@@ -1,6 +1,6 @@
 # udruzenjesajt
 
-Sajt Udruženja „Микиликс веб развој“ — HTML5, CSS3, JavaScript i PHP.
+Sajt Udruženja „Mikiliks veb razvoja“ — HTML5, CSS3, JavaScript i PHP.
 
 Zaglavlje (header) i podnožje (footer) postoje **samo na jednom mestu** i uključuju se
 u svaku stranicu, pa se izmena radi jednom i vidi se na celom sajtu.
