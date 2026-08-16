@@ -7,15 +7,78 @@ require_once __DIR__ . '/config.php';
 
 $page_title       = $page_title       ?? $site['naziv'];
 $page_description = $page_description ?? $site['opis'];
+$page_keywords    = $page_keywords    ?? $site['kljucne_reci'];
+$page_image       = $page_image       ?? $site['slika_deljenje'];
+
+/* Apsolutni URL-ovi — potrebni za canonical, og:url i og:image
+   (društvene mreže i Viber ne prikazuju relativne putanje). */
+$domen          = rtrim($site['domen'], '/');
+$trenutna       = trenutna_strana();
+$kanonski_url   = $trenutna === 'index.php' ? $domen . '/' : $domen . '/' . $trenutna;
+$slika_url      = $domen . '/' . ltrim($page_image, '/');
+$puni_naslov    = $page_title === $site['naziv'] ? $page_title : $page_title . ' | ' . $site['naziv'];
 ?>
 <!doctype html>
 <html lang="<?= e($site['jezik']) ?>">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title><?= e($page_title) ?> | <?= e($site['naziv']) ?></title>
+<title><?= e($puni_naslov) ?></title>
+
+<!-- Osnovni meta podaci -->
 <meta name="description" content="<?= e($page_description) ?>">
-<link rel="icon" href="assets/img/logo.svg">
+<meta name="keywords" content="<?= e($page_keywords) ?>">
+<meta name="author" content="<?= e($site['autor']) ?>">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#117fe8">
+<link rel="canonical" href="<?= e($kanonski_url) ?>">
+
+<!-- Favicon (isti znak kao logo, u više formata radi kompatibilnosti) -->
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+<!-- Open Graph (Facebook, Viber, LinkedIn...) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="<?= e($site['naziv']) ?>">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:title" content="<?= e($page_title) ?>">
+<meta property="og:description" content="<?= e($page_description) ?>">
+<meta property="og:url" content="<?= e($kanonski_url) ?>">
+<meta property="og:image" content="<?= e($slika_url) ?>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="<?= e($site['pun_naziv']) ?>">
+
+<!-- Twitter/X Card (isti podaci, Instagram/Viber koriste Open Graph iznad) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?= e($page_title) ?>">
+<meta name="twitter:description" content="<?= e($page_description) ?>">
+<meta name="twitter:image" content="<?= e($slika_url) ?>">
+
+<!-- Strukturirani podaci za pretraživače (Google, Bing...) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": <?= json_encode($site['pun_naziv'], JSON_UNESCAPED_UNICODE) ?>,
+  "url": <?= json_encode($domen . '/', JSON_UNESCAPED_UNICODE) ?>,
+  "logo": <?= json_encode($domen . '/assets/img/logo.svg', JSON_UNESCAPED_UNICODE) ?>,
+  "email": <?= json_encode($site['email'], JSON_UNESCAPED_UNICODE) ?>,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kragujevac",
+    "addressCountry": "RS"
+  }<?php $mreze = array_values(array_filter($drustvene_mreze)); if ($mreze): ?>,
+  "sameAs": <?= json_encode($mreze, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>
+  <?php endif; ?>
+}
+</script>
+
+<?php foreach (array_filter($drustvene_mreze) as $mreza_link): ?>
+<link rel="me" href="<?= e($mreza_link) ?>">
+<?php endforeach; ?>
+
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>

@@ -17,6 +17,36 @@ $site = [
     'jezik'      => 'sr',
     'opis'       => 'Dobrovoljno, nevladino i neprofitno udruženje posvećeno obrazovanju, '
                   . 'nauci, informacionim tehnologijama, veb razvoju i digitalnoj pismenosti.',
+
+    /* Domen sajta BEZ kose crte na kraju — koristi se za favicon, canonical i
+       og:url/og:image linkove. VAŽNO: zameni kada registruješ pravi domen. */
+    'domen'      => 'https://udruzenje-mikiliks-veb-razvoj.rs',
+
+    /* Autor sadržaja — meta name="author" */
+    'autor'      => 'Udruženje „Mikiliks veb razvoj“',
+
+    /* Podrazumevane ključne reči (meta keywords) — pretraživači ih danas
+       uglavnom ignorišu za rangiranje, ali ih neki alati i dalje čitaju. */
+    'kljucne_reci' => 'udruženje, Mikiliks veb razvoj, Kragujevac, obrazovanje, '
+                     . 'informacione tehnologije, veb razvoj, programiranje, '
+                     . 'digitalna pismenost, edukacije, nevladina organizacija',
+
+    /* Podrazumevana slika za deljenje na Viberu/Instagramu/Fejsbuku/Tviteru
+       (Open Graph / Twitter Card). Svaka strana može da je preklopi tako što
+       pre require-a header.php postavi $page_image = 'assets/img/nesto.jpg'. */
+    'slika_deljenje' => 'assets/img/social-share.jpg',
+];
+
+/* ---------------------------------------------------------------------------
+   1b) DRUŠTVENE MREŽE
+   Ostavi prazan string '' za mrežu koju udruženje još nema — kod će je
+   automatski preskočiti i neće praviti "mrtve" linkove.
+   --------------------------------------------------------------------------- */
+$drustvene_mreze = [
+    'facebook'  => '',
+    'instagram' => '',
+    'linkedin'  => '',
+    'youtube'   => '',
 ];
 
 
