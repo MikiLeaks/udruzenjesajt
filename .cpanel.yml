@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/tvojsajt6/public_html/
+    - export DEPLOYPATH=/home/mikileak/udruzenje-mikiliks-veb-razvoj.rs/
     - /bin/cp -R * $DEPLOYPATH
