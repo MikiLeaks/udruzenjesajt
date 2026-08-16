@@ -9,15 +9,16 @@ declare(strict_types=1);
    1) OSNOVNI PODACI O UDRUŽENJU
    --------------------------------------------------------------------------- */
 $site = [
-    'naziv'      => 'Микиликс веб развој',
-    'pun_naziv'  => 'Udruženje „Микиликс веб развој“',
-    'email'      => 'info@vas-domen.rs',
-    'grad'       => 'Kragujevac, Srbija',
+    'naziv'      => 'Mikiliks veb razvoj',
+    'pun_naziv'  => 'Udruženje „Mikiliks veb razvoj“',
+    'email'      => 'info@udruzenje-mikiliks-veb-razvoj.rs',
+    'grad'       => '34000 Kragujevac, Srbija',
     'napomena'   => 'Udruženje od javnog interesa',
     'jezik'      => 'sr',
     'opis'       => 'Dobrovoljno, nevladino i neprofitno udruženje posvećeno obrazovanju, '
                   . 'nauci, informacionim tehnologijama, veb razvoju i digitalnoj pismenosti.',
 ];
+
 
 /* ---------------------------------------------------------------------------
    2) GLAVNI MENI  (kljuc = fajl, vrednost = tekst u meniju)
