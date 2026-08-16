@@ -1,4 +1,4 @@
-<?php
+123<?php
 $page_title       = 'Početna';
 $page_description = 'Udruženje „Микиликс веб развој" (Kragujevac) — obrazovanje, digitalna pismenost, informacione tehnologije i veb razvoj, u skladu sa Statutom udruženja.';
 require __DIR__ . '/includes/header.php';
