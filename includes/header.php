@@ -105,7 +105,13 @@ $puni_naslov    = $page_title === $site['naziv'] ? $page_title : $page_title . '
       <a class="top-item" href="mailto:<?= e($site['email']) ?>"><i class="top-dot"></i><?= e($site['email']) ?></a>
     </div>
     <div class="top-items">
-      <span class="top-item"><i class="top-dot"></i><?= e($site['napomena']) ?></span>
+      <?php $aktivne_mreze = array_filter($drustvene_mreze); if ($aktivne_mreze): ?>
+      <div class="topbar-social">
+        <?php foreach ($aktivne_mreze as $mreza => $link): ?>
+        <a href="<?= e($link) ?>" target="_blank" rel="noopener noreferrer" aria-label="<?= e(naziv_mreze($mreza)) ?>"><?= ikonica_mreze($mreza) ?></a>
+        <?php endforeach; ?>
+      </div>
+      <?php endif; ?>
     </div>
   </div>
 </div>

@@ -19,7 +19,6 @@ $site = [
     'telefon_tel' => '+381669079557',
     'pib'        => '109243073',
     'mb'         => '28185685',
-    'napomena'   => 'Udruženje od javnog interesa',
     'jezik'      => 'sr',
     'opis'       => 'Dobrovoljno, nevladino i neprofitno udruženje posvećeno obrazovanju, '
                   . 'nauci, informacionim tehnologijama, veb razvoju i digitalnoj pismenosti.',
