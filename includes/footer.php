@@ -50,7 +50,7 @@ require_once __DIR__ . '/config.php';
 </footer>
 
 <button class="back-to-top" type="button" aria-label="Nazad na vrh strane">
-  <span class="arrow" aria-hidden="true">↑</span> Na vrh
+  <span class="arrow" aria-hidden="true">↑</span>
 </button>
 
 <div class="cookie-banner">
