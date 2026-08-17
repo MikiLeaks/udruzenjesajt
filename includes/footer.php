@@ -34,11 +34,12 @@ require_once __DIR__ . '/config.php';
         <div class="contact-line"><span>✉</span><a href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a></div>
         <div class="contact-line"><span>🕐</span><span><?= e($site['radno_vreme']) ?></span></div>
         <div class="contact-line"><span>☎</span><a href="tel:<?= e($site['telefon_tel']) ?>"><?= e($site['telefon']) ?></a></div>
+        <div class="contact-line"><span>ID</span><span>PIB: <?= e($site['pib']) ?> · MB: <?= e($site['mb']) ?></span></div>
       </div>
     </div>
 
     <div class="copyright">
-      <div>© <?= date('Y') ?> <?= e($site['pun_naziv']) ?>. PIB: <?= e($site['pib']) ?> · MB: <?= e($site['mb']) ?></div>
+      <div>© <?= date('Y') ?> <?= e($site['pun_naziv']) ?>.</div>
       <span>
         <?php $prvi = true; foreach ($footer_pravno as $link => $tekst): ?>
         <?= $prvi ? '' : ' · ' ?><a href="<?= e($link) ?>"><?= e($tekst) ?></a>
