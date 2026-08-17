@@ -65,10 +65,25 @@ $puni_naslov    = $page_title === $site['naziv'] ? $page_title : $page_title . '
   "url": <?= json_encode($domen . '/', JSON_UNESCAPED_UNICODE) ?>,
   "logo": <?= json_encode($domen . '/assets/img/logo.svg', JSON_UNESCAPED_UNICODE) ?>,
   "email": <?= json_encode($site['email'], JSON_UNESCAPED_UNICODE) ?>,
+  "telephone": <?= json_encode($site['telefon_tel'], JSON_UNESCAPED_UNICODE) ?>,
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Kralja Milana IV 13/21",
+    "postalCode": "34000",
     "addressLocality": "Kragujevac",
     "addressCountry": "RS"
+  },
+  "taxID": <?= json_encode($site['pib'], JSON_UNESCAPED_UNICODE) ?>,
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Matični broj",
+    "value": <?= json_encode($site['mb'], JSON_UNESCAPED_UNICODE) ?>
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
   }<?php $mreze = array_values(array_filter($drustvene_mreze)); if ($mreze): ?>,
   "sameAs": <?= json_encode($mreze, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>
   <?php endif; ?>
