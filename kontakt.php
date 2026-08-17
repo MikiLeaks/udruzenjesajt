@@ -10,6 +10,6 @@ require __DIR__ . '/includes/header.php';
 $map_upit = urlencode('Udruženje ' . $site['naziv'] . ', ' . $site['adresa']);
 $map_link = 'https://www.google.com/maps/search/?api=1&query=' . $map_upit;
 ?>
-<section class="section soft"><div class="container"><div class="center"><span class="eyebrow">Lokacija</span><h2>Sedište udruženja</h2></div><a class="map" href="<?= e($map_link) ?>" target="_blank" rel="noopener noreferrer" aria-label="Otvori lokaciju udruženja u Google Maps"><div class="map-pin"><i></i></div><span class="map-hint">Otvori u Google Maps ↗</span></a><p class="center" style="margin-top:18px"><?= e($site['adresa']) ?></p><p class="center"><a class="btn btn-outline btn-sm" href="<?= e($map_link) ?>" target="_blank" rel="noopener noreferrer">Otvori u Google Maps <span class="arrow">→</span></a></p></div></section>
+<section class="section soft"><div class="container"><div class="center"><span class="eyebrow">Lokacija</span><h2>Sedište udruženja</h2></div><a class="map" href="<?= e($map_link) ?>" target="_blank" rel="noopener noreferrer" aria-label="Otvori lokaciju udruženja u Google Maps"><span class="map-hint">Otvori u Google Maps ↗</span></a><p class="center" style="margin-top:18px"><?= e($site['adresa']) ?></p><p class="center"><a class="btn btn-outline btn-sm" href="<?= e($map_link) ?>" target="_blank" rel="noopener noreferrer">Otvori u Google Maps <span class="arrow">→</span></a></p></div></section>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>
