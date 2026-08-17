@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
 
-# Zamenite donji red stvarnom adresom sajta kada dobijete domen,
-# i dodajte pravi sitemap.xml ako ga budete generisali.
-# Sitemap: https://www.vas-domen.rs/sitemap.xml
+Sitemap: https://www.udruzenje-mikiliks-veb-razvoj.rs/sitemap.xml

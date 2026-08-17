@@ -25,7 +25,7 @@ $site = [
 
     /* Domen sajta BEZ kose crte na kraju — koristi se za favicon, canonical i
        og:url/og:image linkove. VAŽNO: zameni kada registruješ pravi domen. */
-    'domen'      => 'https://udruzenje-mikiliks-veb-razvoj.rs',
+    'domen'      => 'https://www.udruzenje-mikiliks-veb-razvoj.rs',
 
     /* Autor sadržaja — meta name="author" */
     'autor'      => 'Udruženje „Mikiliks veb razvoj“',
