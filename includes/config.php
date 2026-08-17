@@ -19,6 +19,8 @@ $site = [
     'telefon_tel' => '+381669079557',
     'pib'        => '109243073',
     'mb'         => '28185685',
+    'gtm_id'     => 'GTM-NNFZHCTF',
+    'ga_id'      => 'G-QXE6F0B3FX',
     'jezik'      => 'sr',
     'opis'       => 'Dobrovoljno, nevladino i neprofitno udruženje posvećeno obrazovanju, '
                   . 'nauci, informacionim tehnologijama, veb razvoju i digitalnoj pismenosti.',
