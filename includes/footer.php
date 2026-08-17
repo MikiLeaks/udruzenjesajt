@@ -34,7 +34,7 @@ require_once __DIR__ . '/config.php';
         <div class="contact-line"><span>✉</span><a href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a></div>
         <div class="contact-line"><span>🕐</span><span><?= e($site['radno_vreme']) ?></span></div>
         <div class="contact-line"><span>☎</span><a href="tel:<?= e($site['telefon_tel']) ?>"><?= e($site['telefon']) ?></a></div>
-        <div class="contact-line"><span>ID</span><span>PIB: <?= e($site['pib']) ?> · MB: <?= e($site['mb']) ?></span></div>
+        <div class="contact-line"><span>🏢</span><span>PIB: <?= e($site['pib']) ?> · MB: <?= e($site['mb']) ?></span></div>
       </div>
     </div>
 
