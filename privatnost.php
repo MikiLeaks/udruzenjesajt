@@ -23,7 +23,7 @@ Telefon: <a href="tel:<?= e($site['telefon_tel']) ?>"><?= e($site['telefon']) ?>
 <p>Podatke o ličnosti prikupljamo isključivo kada nam ih dobrovoljno dostavite putem formi na sajtu:</p>
 <ul>
 <li><strong>Kontakt forma</strong> (stranica Kontakt): ime i prezime, e-mail, telefon (opciono), tema i naslov poruke, sadržaj poruke.</li>
-<li><strong>Pristupnica za članstvo</strong> (stranica Članstvo): ime, prezime, datum rođenja, adresa stanovanja, e-mail, telefon, oblasti interesovanja — u skladu sa članom 5. Statuta Udruženja.</li>
+<li><strong>Pristupnica za članstvo</strong> (stranica Članstvo): ime, prezime, JMBG, datum rođenja, adresa stanovanja, mesto, telefon, e-mail, zanimanje/ustanova/kompanija (opciono), oblasti interesovanja — u skladu sa članom 5. Statuta Udruženja.</li>
 <li><strong>Prijava interesovanja za edukacije</strong> (stranica Edukacije): ime i prezime, e-mail, oblast interesovanja.</li>
 <li><strong>Prijava za obaveštenja</strong> (stranica Vesti): e-mail adresa.</li>
 </ul>
@@ -58,7 +58,7 @@ Telefon: <a href="tel:<?= e($site['telefon_tel']) ?>"><?= e($site['telefon']) ?>
 </ul>
 
 <h2>7. Bezbednost podataka</h2>
-<p>Udruženje preduzima razumne tehničke i organizacione mere radi zaštite podataka od neovlašćenog pristupa, gubitka, izmene ili zloupotrebe. Pristup podacima imaju samo lica kojima je to neophodno radi obavljanja poslova Udruženja.</p>
+<p>Udruženje preduzima razumne tehničke i organizacione mere radi zaštite podataka od neovlašćenog pristupa, gubitka, izmene ili zloupotrebe. Pristup podacima imaju samo lica kojima je to neophodno radi obavljanja poslova Udruženja. Jedinstveni matični broj građana (JMBG), prikupljen isključivo putem pristupnice za članstvo, tretira se s posebnom pažnjom i koristi se samo za vođenje evidencije članstva u skladu sa Statutom, a ne deli se sa trećim licima osim kada je to zakonom izričito propisano.</p>
 
 <h2>8. Prava lica čiji se podaci obrađuju</h2>
 <p>U skladu sa Zakonom o zaštiti podataka o ličnosti, imate pravo da:</p>
