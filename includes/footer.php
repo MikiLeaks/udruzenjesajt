@@ -49,6 +49,10 @@ require_once __DIR__ . '/config.php';
   </div>
 </footer>
 
+<button class="back-to-top" type="button" aria-label="Nazad na vrh strane">
+  <span class="arrow" aria-hidden="true">↑</span> Na vrh
+</button>
+
 <div class="cookie-banner">
   <p>Ovaj sajt koristi samo neophodno lokalno čuvanje izbora o kolačićima. Više informacija je u
      <a href="kolacici.php" style="color:#075fbf;font-weight:800">Politici kolačića</a>.</p>
