@@ -49,5 +49,37 @@ if(backToTop){
   window.addEventListener('resize',pomeriDugmeIznadTrake);
   pomeriDugmeIznadTrake();
 }
-document.querySelectorAll('form[data-demo-form]').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();const out=form.querySelector('.form-message');if(out){out.textContent='Forma je uspešno popunjena u demo prikazu. Za slanje sa sajta potrebno je povezati e-mail servis ili WordPress dodatak.';out.style.display='block';}form.reset();}));
+/* Slanje formi (kontakt, a kasnije i ostale) bez ponovnog učitavanja stranice — POST ide na obrada-forme.php */
+document.querySelectorAll('form[data-ajax-form]').forEach(form=>{
+  form.addEventListener('submit', async e=>{
+    e.preventDefault();
+    const dugme = form.querySelector('button[type="submit"]');
+    const poruka = form.querySelector('.form-message');
+    const izvornoDugme = dugme ? dugme.textContent : '';
+    if(dugme){ dugme.disabled = true; dugme.textContent = 'Slanje...'; }
+    if(poruka){ poruka.style.display = 'none'; poruka.classList.remove('success','error'); }
+    try{
+      const odgovor = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'X-Requested-With': 'fetch' },
+        body: new FormData(form)
+      });
+      const podaci = await odgovor.json();
+      if(poruka){
+        poruka.textContent = podaci.message;
+        poruka.classList.add(podaci.success ? 'success' : 'error');
+        poruka.style.display = 'block';
+      }
+      if(podaci.success) form.reset();
+    }catch(err){
+      if(poruka){
+        poruka.textContent = 'Došlo je do greške prilikom slanja. Pokušajte ponovo malo kasnije.';
+        poruka.classList.add('error');
+        poruka.style.display = 'block';
+      }
+    }finally{
+      if(dugme){ dugme.disabled = false; dugme.textContent = izvornoDugme; }
+    }
+  });
+});
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
