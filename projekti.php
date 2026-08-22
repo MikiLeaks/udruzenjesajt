@@ -11,7 +11,12 @@ require __DIR__ . '/includes/header.php';
 <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-1d59c531-fc80-4bf1-b4e0-1c3831441d45" data-elfsight-app-lazy></div>
-</div></div></section>
+</div><div class="gallery-cta"><a href="https://www.instagram.com/udruzenjemikiliksvebrazvoj/" target="_blank" rel="noopener noreferrer" class="btn-ig-all"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"></circle></svg>Pogledaj sve fotografije</a></div></div></section>
+<style>
+.gallery-cta{text-align:center;margin-top:28px}
+.btn-ig-all{display:inline-flex;align-items:center;gap:10px;padding:12px 30px;background:#117fe8;color:#fff;font-weight:600;font-size:15px;border-radius:8px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.btn-ig-all:hover{background:#0d68c2;color:#fff;transform:translateY(-2px);box-shadow:0 10px 22px rgba(17,127,232,.30)}
+</style>
 <section class="section soft"><div class="container"><div class="center"><span class="eyebrow">Partneri</span><h2>Saradnja na projektima</h2></div><div class="partner-row"><span class="partner">Škole i fakulteti</span><span class="partner">Lokalne institucije</span><span class="partner">Kompanije</span><span class="partner">Fondacije</span><span class="partner">Udruženja</span><span class="partner">Međunarodni partneri</span></div></div></section>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>
